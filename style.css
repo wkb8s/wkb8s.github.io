@@ -1,0 +1,62 @@
+/* style.css */
+*{
+	margin: 0;
+	padding: 0;
+}
+body, p, form, ul, ol, input, button{
+	font-size: 16pt;
+}
+
+/* 無くても大丈夫なようだが、一応めいっぱいに広げておく */
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+/* ブラウザ側で勝手に追加する青い枠線を消す */
+:focus{
+	outline: none;
+}
+/*
+	ターミナル表示用textareaタグ
+*/
+#terminal{
+	font-family: 'courier new', Futura, Helvetica, '游ゴシック', 'メイリオ', Osaka;
+	width: 100%;
+	height: 100%;
+	overflow: auto;	/* IEでは設定しておかないとスクロールバーが表示されしまう */
+	display: block;	/* 指定しないとスクロールバーが表示される */
+	border: none;	/* 変な余白が出ないように */
+	resize: none;		/* リサイズできると格好悪いので */
+	background-color: #202020;
+	color: white;
+	font-size: 16pt;
+	line-height: 1.4em;	/* 全角文字を入力時にこれ以上の高さがないと入力時にぎくしゃくするため */
+}
+
+.tool-bar {
+    width: 100%;
+    background-color: #404040;
+    color: lightgrey;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 4px;
+}
+
+.button {
+    position: absolute;
+    left: 0;
+}
+
+span.red {
+    color: red;
+}
+
+span.yellow {
+    color: gold;
+}
+
+span.green {
+    color: limegreen;
+}
